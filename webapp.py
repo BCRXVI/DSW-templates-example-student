@@ -2,7 +2,7 @@ from flask import Flask, url_for, render_template
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/") #annotation tells the URL that will amek this function run
 def render_main():
     return render_template('home.html')
 
